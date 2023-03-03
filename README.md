@@ -8,7 +8,6 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -43,14 +42,6 @@
 
 - **[key_feature_1Set up associations between models]**
 - **[Write SQL queries with Active Record]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](https://google.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
