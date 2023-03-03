@@ -12,7 +12,7 @@ RSpec.describe Post, type: :model do
   end
 
   it 'title should be not exceed 250 characters' do
-    post.title = 'a'*251
+    post.title = 'a' * 251
 
     expect(post).to_not be_valid
   end
@@ -24,7 +24,7 @@ RSpec.describe Post, type: :model do
   end
   it 'comments_counter should be integer' do
     post.comments_counter = 'b'
-    
+
     expect(post).to_not be_valid
   end
 
@@ -41,7 +41,7 @@ RSpec.describe Post, type: :model do
   end
   it 'likes_counter should be integer' do
     post.likes_counter = 'b'
-    
+
     expect(post).to_not be_valid
   end
 
@@ -50,5 +50,4 @@ RSpec.describe Post, type: :model do
 
     expect(post).to_not be_valid
   end
-
 end

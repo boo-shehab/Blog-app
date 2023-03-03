@@ -18,7 +18,7 @@ RSpec.describe User, type: :model do
   end
   it 'post_counter should be integer' do
     user.post_counter = 'b'
-    
+
     expect(user).to_not be_valid
   end
 
