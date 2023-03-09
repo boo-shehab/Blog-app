@@ -36,13 +36,13 @@ a {
 }
 
 .user-info {
-    border: 2px solid black;
-    width: 100%;
-    margin-left: 30px;
-    color: black;
-    height: 96px;
-    padding-left: 30px;
-    padding-bottom: 30px;
+  border: 2px solid black;
+  width: 100%;
+  margin-left: 30px;
+  color: black;
+  height: 96px;
+  padding-left: 30px;
+  padding-bottom: 30px;
 }
 
 .user-info p {
@@ -52,14 +52,13 @@ a {
   font-weight: bold;
 }
 
-
 .post-info {
-    color: black;
-    height: 96px;
-    padding-left: 30px;
-    padding-bottom: 30px;
-    border-bottom: 2px solid black;
-  }
+  color: black;
+  height: 96px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid black;
+}
 
 .post {
   border: 2px solid black;
@@ -89,8 +88,8 @@ a {
 }
 
 .post-container {
-    margin-top: 20px;
-    border: 2px solid black;
+  margin-top: 20px;
+  border: 2px solid black;
 }
 
 .likes {
@@ -115,7 +114,7 @@ a {
 }
 
 .comments {
-    margin-bottom: 10px;
-    padding: 10px;
-    padding-left: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  padding-left: 20px;
 }
