@@ -1,1 +1,25 @@
-show post
+<div class ="post-container">
+  <div class = 'post-info'>
+    <h3>
+      <%= @post.title %> by <%= @user.name %>  
+    </h3>
+    <p class="likes">
+      comments : <%= @post.comments_counter %>
+      likes : <%= @post.likes_counter %>
+    </p>
+    <p>
+      <%= @post.text %>
+    </p>
+  </div>
+  <% if @post.comments_counter != 0 %>
+    <p class="comments">
+      <% @post.comment.each do |comment| %>
+        <b>
+          <%= comment.author.name %> :
+        </b> 
+        <%= comment.text %>
+        <br>
+      <% end %>
+    </p>
+  <% end %>
+</div>

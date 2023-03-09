@@ -1,1 +1,17 @@
-index user
+<% @users.each do |user| %>
+  <div class="user-card">
+    <div class="user-image">
+      <img src="<%= user.photo %>">
+    </div>
+    <div class = "user-info">
+      <a href=<%= "/user/#{user.id}" %>>  
+        <h1>
+          <%= user.name %>
+        </h1>  
+        <p>
+          Number of posts : <%= user.post_counter %>
+        </p>
+      </a>
+    </div>
+  </div>
+<% end %>
