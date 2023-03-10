@@ -24,8 +24,9 @@ class PostController < ApplicationController
       redirect_to user_index_path, notice: 'Post creation failed'
     end
   end
-  
+
   private
+
   def post_params
     params.require(:post).permit(:title, :text)
   end
