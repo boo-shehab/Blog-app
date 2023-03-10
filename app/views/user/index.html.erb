@@ -15,3 +15,7 @@
     </div>
   </div>
 <% end %>
+
+<button>
+  <%= link_to "add new post for #{@user.name}", new_user_post_path(@user) %>
+</button>

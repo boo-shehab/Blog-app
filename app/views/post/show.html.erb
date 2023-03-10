@@ -23,3 +23,8 @@
     </p>
   <% end %>
 </div>
+<button>
+<%= link_to "add new comment for #{@user.name} to post #{@post.title}", new_user_post_comment_path(user_id: @user.id, post_id: @post.id) %>
+</button>
+
+<%= button_to "add a like for #{@user.name} #{@post.title}", user_post_like_index_path(user_id: @user.id, post_id: @post.id),  method: :post %>
