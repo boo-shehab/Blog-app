@@ -1,18 +1,12 @@
 class PasswordsController < Devise::PasswordsController
-    def new
-      super
-    end
-  
-    def create
-      super
-    end
-  
-    def edit
-      super
-    end
-  
-    def update
-      super
-    end
-  end
-  
+  # GET /resource/password/new
+
+
+  # POST /resource/password
+
+
+  # GET /resource/password/edit?reset_password_token=abcdef
+
+
+  # PUT /resource/password
+end
