@@ -5,7 +5,7 @@ class PostController < ApplicationController
     @posts = Post.where(author_id: @user.id).includes(comment: [:author])
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html
       format.xml { render xml: @posts }
       format.json { render json: @posts }
     end
