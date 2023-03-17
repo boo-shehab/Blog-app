@@ -4,10 +4,11 @@ class CommentController < ApplicationController
     @comments = post.comment
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @comments }
-      format.json { render :json => @comments }
+      format.xml { render xml: @comments }
+      format.json { render json: @comments }
     end
   end
+
   def new
     @post = Post.find(params[:post_id])
     @user = User.find(params[:user_id])
@@ -19,12 +20,12 @@ class CommentController < ApplicationController
     comment.author_id = current_user.id
     comment.post_id = params[:post_id]
     if comment.save
-      
-    respond_to do |format|
-      format.html {redirect_to user_post_path(user_id: current_user.id, id: params[:post_id])}
-      format.xml  { render xml: comment, status: :created }
-      format.json { render json: comment, status: :created }
-    end
+
+      respond_to do |format|
+        format.html { redirect_to user_post_path(user_id: current_user.id, id: params[:post_id]) }
+        format.xml { render xml: comment, status: :created }
+        format.json { render json: comment, status: :created }
+      end
     else
       redirect_to user_index_path, notice: 'Post creation failed'
     end
